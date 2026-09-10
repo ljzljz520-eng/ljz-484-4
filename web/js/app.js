@@ -553,6 +553,8 @@ function dlgHtml(d, di) {
           d.speaker
         )}" />
         <span class="spacer"></span>
+        <button type="button" class="btn small js-dlg-up">↑ 上移</button>
+        <button type="button" class="btn small js-dlg-down">↓ 下移</button>
         <button type="button" class="btn small danger js-del-dlg">删除台词</button>
       </div>
       <textarea data-field="text" rows="2" placeholder="对白 / 独白 / 旁白 / 音效文字">${esc(
@@ -675,8 +677,11 @@ function syncPanelsFromDom() {
   });
 }
 
+// 重新按 editorState 渲染分镜列表。
+// 注意：不要在渲染前再次 syncPanelsFromDom() —— 调用方都是
+// 「先 sync → 改 editorState → 再渲染」，渲染前若再同步一次，
+// 未更新的旧 DOM 会把刚做的增删/排序覆盖回去。
 function rerenderPanels() {
-  syncPanelsFromDom();
   const wrap = document.getElementById('panels-wrap');
   wrap.innerHTML = editorState.panels.length
     ? editorState.panels.map(panelHtml).join('')
@@ -699,7 +704,29 @@ function bindPanelButtons() {
       const last = lists[pi]?.lastElementChild;
       last?.querySelector('textarea')?.focus();
     };
-    pel.querySelector('.js-del-dlg')?.closest('.editor-panel');
+    // 台词：上移 / 下移 / 删除
+    pel.querySelectorAll('.js-dlg-up').forEach((btn) => {
+      btn.onclick = () => {
+        syncPanelsFromDom();
+        const pi = Number(pel.dataset.pi);
+        const di = Number(btn.closest('.dlg-row').dataset.di);
+        const dialogues = editorState.panels[pi].dialogues;
+        if (di <= 0) return;
+        [dialogues[di - 1], dialogues[di]] = [dialogues[di], dialogues[di - 1]];
+        rerenderPanels();
+      };
+    });
+    pel.querySelectorAll('.js-dlg-down').forEach((btn) => {
+      btn.onclick = () => {
+        syncPanelsFromDom();
+        const pi = Number(pel.dataset.pi);
+        const di = Number(btn.closest('.dlg-row').dataset.di);
+        const dialogues = editorState.panels[pi].dialogues;
+        if (di >= dialogues.length - 1) return;
+        [dialogues[di], dialogues[di + 1]] = [dialogues[di + 1], dialogues[di]];
+        rerenderPanels();
+      };
+    });
     pel.querySelectorAll('.js-del-dlg').forEach((btn) => {
       btn.onclick = () => {
         syncPanelsFromDom();

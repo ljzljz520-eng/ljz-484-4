@@ -10,6 +10,24 @@ const PORT = process.env.PORT || 4000;
 
 app.use(express.json({ limit: '2mb' }));
 
+// 跨源支持：网页端用独立静态服务器（如 http://localhost:8080）托管时，
+// 浏览器访问本 API 属于跨源请求，需要显式放行（含 OPTIONS 预检）。
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  res.setHeader('Access-Control-Allow-Origin', origin || '*');
+  res.setHeader('Vary', 'Origin');
+  res.setHeader(
+    'Access-Control-Allow-Methods',
+    'GET,POST,PUT,PATCH,DELETE,OPTIONS'
+  );
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    req.headers['access-control-request-headers'] || 'Content-Type'
+  );
+  if (req.method === 'OPTIONS') return res.status(204).end();
+  next();
+});
+
 // 简单请求日志
 app.use((req, _res, next) => {
   console.log(`${new Date().toISOString()} ${req.method} ${req.url}`);
