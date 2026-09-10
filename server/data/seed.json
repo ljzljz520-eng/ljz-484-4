@@ -1,0 +1,325 @@
+{
+  "works": [
+    {
+      "id": "w_stardust",
+      "title": "星尘信使",
+      "author": "林小满",
+      "genre": "科幻 / 冒险",
+      "summary": "废弃空间站的维护机器人捡到一条来自旧地球的语音留言，决定跨越大半个星系把它送回收件人手中。",
+      "cover": "",
+      "createdAt": "2026-08-01T09:00:00.000Z",
+      "updatedAt": "2026-09-08T02:10:00.000Z",
+      "chapters": [
+        {
+          "id": "c_stardust_01",
+          "volumeNo": 1,
+          "chapterNo": 1,
+          "title": "第一话：沉睡者醒来",
+          "status": "published",
+          "synopsis": "维护机器人「滴答」在断电前的最后一次巡检中，收到了一条陌生的旧地球信号。",
+          "createdAt": "2026-08-10T03:00:00.000Z",
+          "updatedAt": "2026-09-01T08:00:00.000Z",
+          "publishedAt": "2026-09-01T08:00:00.000Z",
+          "panels": [
+            {
+              "id": "p_s01_01",
+              "size": "large",
+              "scene": "远景·废弃空间站外侧",
+              "description": "巨大的环形空间站漂浮在星海中央，一半船体被星云照亮，舷窗全部漆黑。远处一颗蓝色行星若隐若现。",
+              "dialogues": [
+                {
+                  "id": "d_s01_01",
+                  "type": "narration",
+                  "speaker": "",
+                  "text": "公元 2247 年，「灯塔七号」空间站已经静默了三十一年。"
+                },
+                {
+                  "id": "d_s01_02",
+                  "type": "sfx",
+                  "speaker": "",
+                  "text": "嗡————"
+                }
+              ]
+            },
+            {
+              "id": "p_s01_02",
+              "size": "medium",
+              "scene": "中景·维修通道",
+              "description": "圆滚滚的维护机器人「滴答」从充电舱里滑出，镜头灯扫过结霜的管线，灯光在尽头停住。",
+              "dialogues": [
+                {
+                  "id": "d_s01_03",
+                  "type": "thought",
+                  "speaker": "滴答",
+                  "text": "电量只剩 4%……最后一次巡检了吧。"
+                }
+              ]
+            },
+            {
+              "id": "p_s01_03",
+              "size": "small",
+              "scene": "特写·信号灯",
+              "description": "一台满是灰尘的通讯终端突然亮起一枚橙红色信号灯，信号波纹一圈圈扩散。",
+              "dialogues": [
+                {
+                  "id": "d_s01_04",
+                  "type": "sfx",
+                  "speaker": "",
+                  "text": "滴、滴滴——！"
+                }
+              ]
+            },
+            {
+              "id": "p_s01_04",
+              "size": "medium",
+              "scene": "过肩镜头·终端屏幕",
+              "description": "屏幕上滚动着解码进度条，随后浮现一段文字和一个老旧的地球坐标，坐标旁写着一个名字：外婆。",
+              "dialogues": [
+                {
+                  "id": "d_s01_05",
+                  "type": "dialogue",
+                  "speaker": "终端",
+                  "text": "检测到未投递语音留言，发件人：叶知秋，收件人：叶小星。"
+                },
+                {
+                  "id": "d_s01_06",
+                  "type": "thought",
+                  "speaker": "滴答",
+                  "text": "留言……还没有送到。那它一定还在等。"
+                }
+              ]
+            },
+            {
+              "id": "p_s01_05",
+              "size": "large",
+              "scene": "仰视·气闸舱",
+              "description": "滴答把一枚旧徽章别在自己的金属外壳上，推着一台改装引擎走进逃生舱。身后的空间站缓缓沉入黑暗，逃生舱喷出蓝色火焰，朝行星方向飞去。",
+              "dialogues": [
+                {
+                  "id": "d_s01_07",
+                  "type": "dialogue",
+                  "speaker": "滴答",
+                  "text": "目的地：地球。包裹：一句话。投递员——滴答，出发！"
+                },
+                {
+                  "id": "d_s01_08",
+                  "type": "sfx",
+                  "speaker": "",
+                  "text": "轰——！"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c_stardust_02",
+          "volumeNo": 1,
+          "chapterNo": 2,
+          "title": "第二话：流星港的雨",
+          "status": "published",
+          "synopsis": "滴答在中转站「流星港」补给，遇上靠捡废品为生的少女阿岚。",
+          "createdAt": "2026-08-20T03:00:00.000Z",
+          "updatedAt": "2026-09-06T10:30:00.000Z",
+          "publishedAt": "2026-09-06T10:30:00.000Z",
+          "panels": [
+            {
+              "id": "p_s02_01",
+              "size": "large",
+              "scene": "俯瞰·流星港",
+              "description": "建在陨石内部的港口城市，灯火顺着矿道蔓延。人造雨从透明穹顶洒下，霓虹灯在积水里碎成一片。",
+              "dialogues": [
+                {
+                  "id": "d_s02_01",
+                  "type": "narration",
+                  "speaker": "",
+                  "text": "流星港，三不管的补给站，也收留所有无处可去的人。"
+                }
+              ]
+            },
+            {
+              "id": "p_s02_02",
+              "size": "medium",
+              "scene": "中景·废品巷",
+              "description": "滴答头顶包袱、踮着轮子跳过水洼，被一只从废品堆里伸出的手拽住了天线。",
+              "dialogues": [
+                {
+                  "id": "d_s02_02",
+                  "type": "dialogue",
+                  "speaker": "阿岚",
+                  "text": "喂，铁皮球！这条巷子的过路费，留下你身上能用的零件。"
+                },
+                {
+                  "id": "d_s02_03",
+                  "type": "dialogue",
+                  "speaker": "滴答",
+                  "text": "不行！这是我要送去地球的、很重要很重要的东西！"
+                }
+              ]
+            },
+            {
+              "id": "p_s02_03",
+              "size": "small",
+              "scene": "特写·少女的眼睛",
+              "description": "斗笠下的少女怔了一下，雨水顺着她的睫毛滴落，瞳孔里映着滴答胸口闪烁的信号灯。",
+              "dialogues": [
+                {
+                  "id": "d_s02_04",
+                  "type": "thought",
+                  "speaker": "阿岚",
+                  "text": "地球……好久没听见有人提起那个名字了。"
+                }
+              ]
+            },
+            {
+              "id": "p_s02_04",
+              "size": "medium",
+              "scene": "双人中景·修理铺",
+              "description": "阿岚把滴答拎进一间亮着暖灯的小修理铺，墙上挂满拆下来的飞船零件，她抛来一块干净的电池。",
+              "dialogues": [
+                {
+                  "id": "d_s02_05",
+                  "type": "dialogue",
+                  "speaker": "阿岚",
+                  "text": "拿去吧。条件是——带上我。我认识去地球的航道。"
+                },
+                {
+                  "id": "d_s02_06",
+                  "type": "dialogue",
+                  "speaker": "滴答",
+                  "text": "真的吗？那你就是我的副投递员啦！"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c_stardust_03",
+          "volumeNo": 1,
+          "chapterNo": 3,
+          "title": "第三话：航道图（草稿）",
+          "status": "draft",
+          "synopsis": "阿岚拿出一张旧航道图，两人规划穿越「碎星带」的路线。",
+          "createdAt": "2026-09-08T02:00:00.000Z",
+          "updatedAt": "2026-09-08T02:10:00.000Z",
+          "publishedAt": null,
+          "panels": [
+            {
+              "id": "p_s03_01",
+              "size": "medium",
+              "scene": "待定·修理铺桌面",
+              "description": "铺开的旧航道图占满整张桌子，图上用红笔圈出碎星带，旁边写着潦草的航行笔记。（构图待细化）",
+              "dialogues": [
+                {
+                  "id": "d_s03_01",
+                  "type": "dialogue",
+                  "speaker": "阿岚",
+                  "text": "正规航道要走三个月，穿过碎星带只要七天——前提是我们还活着。"
+                }
+              ]
+            },
+            {
+              "id": "p_s03_02",
+              "size": "small",
+              "scene": "待定",
+              "description": "滴答举手的反应镜头，台词待补。",
+              "dialogues": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w_nightcanteen",
+      "title": "夜雨食堂",
+      "author": "苏桥",
+      "genre": "治愈 / 日常",
+      "summary": "只在雨夜开门的小食堂，每一位深夜来客都带来一个关于告别的故事。",
+      "cover": "",
+      "createdAt": "2026-08-15T12:00:00.000Z",
+      "updatedAt": "2026-09-09T14:00:00.000Z",
+      "chapters": [
+        {
+          "id": "c_night_01",
+          "volumeNo": 1,
+          "chapterNo": 1,
+          "title": "第一话：多加葱的阳春面",
+          "status": "published",
+          "synopsis": "加班到深夜的女孩推门进店，点了一碗和外婆做的味道一样的阳春面。",
+          "createdAt": "2026-08-20T12:00:00.000Z",
+          "updatedAt": "2026-09-05T09:00:00.000Z",
+          "publishedAt": "2026-09-05T09:00:00.000Z",
+          "panels": [
+            {
+              "id": "p_n01_01",
+              "size": "large",
+              "scene": "外景·雨夜小巷",
+              "description": "青石板小巷里雨丝斜飞，一盏写着「面」字的灯笼在檐下轻轻摇晃，暖黄灯光把雨帘染成蜂蜜色。",
+              "dialogues": [
+                {
+                  "id": "d_n01_01",
+                  "type": "sfx",
+                  "speaker": "",
+                  "text": "沙沙——沙沙——"
+                }
+              ]
+            },
+            {
+              "id": "p_n01_02",
+              "size": "medium",
+              "scene": "中景·店内",
+              "description": "浑身湿透的年轻女孩抱着公文包站在门口，老板掀开布帘，蒸汽从他身后涌出来。",
+              "dialogues": [
+                {
+                  "id": "d_n01_02",
+                  "type": "dialogue",
+                  "speaker": "老板",
+                  "text": "欢迎，今晚只有阳春面，不介意的话请坐。"
+                },
+                {
+                  "id": "d_n01_03",
+                  "type": "dialogue",
+                  "speaker": "女孩",
+                  "text": "……麻烦您，多放一点葱。"
+                }
+              ]
+            },
+            {
+              "id": "p_n01_03",
+              "size": "small",
+              "scene": "特写·锅面",
+              "description": "细面在清汤里翻滚，翠绿的葱花撒下去，热气模糊了画面边缘。",
+              "dialogues": [
+                {
+                  "id": "d_n01_04",
+                  "type": "thought",
+                  "speaker": "女孩",
+                  "text": "和外婆做的……一模一样。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c_night_02",
+          "volumeNo": 1,
+          "chapterNo": 2,
+          "title": "第二话：末班公交（草稿）",
+          "status": "draft",
+          "synopsis": "末班公交司机成为食堂常客，他想和退休的老搭档好好说声再见。",
+          "createdAt": "2026-09-09T13:30:00.000Z",
+          "updatedAt": "2026-09-09T14:00:00.000Z",
+          "publishedAt": null,
+          "panels": [
+            {
+              "id": "p_n02_01",
+              "size": "medium",
+              "scene": "待定·公交车内",
+              "description": "空荡的末班公交车，司机望向雨刷外的路灯。分镜草稿，待补充。",
+              "dialogues": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "comic-storyboard-server",
+  "version": "1.0.0",
+  "description": "漫画分镜脚本工具 - 服务端 API",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "seed": "node seed.js",
+    "reset": "node seed.js --force"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
